@@ -26,7 +26,7 @@ public class LoginPage extends BasePage{
 	
 	@FindBy(how = How.CLASS_NAME, using = "login-error")
     public WebElement LoginErrorMessage;
-	
+	//Login to Levis 
 	public void LoginToLevis(String UName,String Pwd) {
 		writeText(username, UName);
 		writeText(password,Pwd);

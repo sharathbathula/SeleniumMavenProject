@@ -16,6 +16,7 @@ public class HomePage extends BasePage{
 		// TODO Auto-generated constructor stub
 	}
 	
+	//Navigate to URL
 	String BaseUrl = "https://www.levi.com";
 	
     @FindBy(how = How.XPATH, using = "//a[normalize-space(text())='Sign in'][@class='signin-signout-link']")
