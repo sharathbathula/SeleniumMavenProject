@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TestSuite" thread-count="5" parallel="tests">
+<listeners>
+<listener class-name="libraries.Listeners"></listener>
+<listener class-name="libraries.Listeners2"></listener>
+</listeners>
   <test name="ChromeTest">
   <parameter name="browser" value="chrome"></parameter>
   	<classes>
 	<class name="Tests.LoginTests">
 	</class>
-	<class name="Tests.TrackNumberTests">
-	</class>
 	</classes>
   </test>
-   <!-- Test -->
-  <test name="FirefoxTest">
-  <parameter name="browser" value="firefox"></parameter>
-  <classes>
-	<class name="Tests.LoginTests">
-	</class>
-	<class name="Tests.TrackNumberTests">
-	</class>
-	</classes>
-  </test> <!-- Test -->
 </suite> <!-- Suite -->

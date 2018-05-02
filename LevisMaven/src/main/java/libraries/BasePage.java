@@ -13,7 +13,6 @@ public class BasePage extends PageGenerator{
 	public <T> void writeText(T elementAtt,String Text) {
 		((WebElement)elementAtt).sendKeys(Text);
 
-		System.out.println(Text+" rightly entered in a Webelement " + elementAtt);
 	}
 	
 	public <T> void SelectDropDown(T elementAtt,String Text) {
