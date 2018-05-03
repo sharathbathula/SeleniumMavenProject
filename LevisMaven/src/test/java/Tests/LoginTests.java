@@ -1,14 +1,16 @@
 package Tests;
 
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import libraries.ExcelUtil;
 import pageModules.HomePage;
 import pageModules.LoginPage;
 
-
-
 public class LoginTests extends BaseTests{
+	
+
   @Test(dataProvider="LoginData")
   public void InvalidLoginDetails(String UserName,String Password) {
 	  page.GetInstance(HomePage.class).goToLevisHomePage();
@@ -18,12 +20,14 @@ public class LoginTests extends BaseTests{
 	  
   }
   
+  
   @DataProvider(name="LoginData")
   public Object[][] TestLogin(){
-	  
-	return new Object[][] {{"userName@gmail.com","password"},{"Hello@gmail.com","Hi"}};
+	  Object[][] Data =page.GetInstance(ExcelUtil.class).getExcelData("C:\\Users\\sharath bathula\\Desktop\\Personal Items\\Career Modules\\Project Artifacts\\Selenium\\Practice\\LevisUserDetails_1.xlsx","LevisProfile");	
+	  return Data;
 	  
   }
+    
   
 
 }
