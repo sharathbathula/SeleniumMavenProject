@@ -5,7 +5,7 @@
 <listener class-name="libraries.Listeners"></listener>
 <listener class-name="libraries.Listeners2"></listener>
 </listeners>
-  <test name="ChromeTests">
+  <test name="ChromeTestsfk">
   <parameter name="browser" value="chrome"></parameter>
   	<classes>
 	<class name="Tests.LoginTests">
