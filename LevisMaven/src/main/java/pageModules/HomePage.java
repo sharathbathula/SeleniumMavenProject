@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-import libraries.BasePage;
+import libraries.LevisGenerics;
 
-public class HomePage extends BasePage{
+public class HomePage extends LevisGenerics{
 
 	public HomePage(WebDriver driver) {
 		super(driver);

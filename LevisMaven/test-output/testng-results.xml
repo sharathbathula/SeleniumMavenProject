@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="20678" started-at="2018-05-02T07:35:09Z" finished-at="2018-05-02T07:35:30Z">
+  <suite name="TestSuite" duration-ms="55073" started-at="2018-05-08T08:08:57Z" finished-at="2018-05-08T08:09:52Z">
     <groups>
     </groups>
-    <test name="ChromeTest" duration-ms="20678" started-at="2018-05-02T07:35:09Z" finished-at="2018-05-02T07:35:30Z">
-      <class name="Tests.LoginTests">
-        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:Tests.LoginTests@66d1af89]" name="Setup" is-config="true" duration-ms="4386" started-at="2018-05-02T07:35:09Z" finished-at="2018-05-02T07:35:14Z">
+    <test name="ChromeTests" duration-ms="55073" started-at="2018-05-08T08:08:57Z" finished-at="2018-05-08T08:09:52Z">
+      <class name="Tests.TrackNumberTests">
+        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:Tests.TrackNumberTests@2db7a79b]" name="Setup" is-config="true" duration-ms="3412" started-at="2018-05-08T08:09:31Z" finished-at="2018-05-08T08:09:34Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,32 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="InvalidLoginDetails(java.lang.String, java.lang.String)[pri:0, instance:Tests.LoginTests@66d1af89]" name="InvalidLoginDetails" duration-ms="14406" started-at="2018-05-02T07:35:15Z" data-provider="LoginData" finished-at="2018-05-02T07:35:29Z">
+        <test-method status="PASS" signature="BlankEmailAddressTest()[pri:0, instance:Tests.TrackNumberTests@2db7a79b]" name="BlankEmailAddressTest" duration-ms="11606" started-at="2018-05-08T08:09:34Z" finished-at="2018-05-08T08:09:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BlankEmailAddressTest -->
+        <test-method status="PASS" signature="BlankOrderNumberTest()[pri:0, instance:Tests.TrackNumberTests@2db7a79b]" name="BlankOrderNumberTest" duration-ms="5028" started-at="2018-05-08T08:09:46Z" finished-at="2018-05-08T08:09:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BlankOrderNumberTest -->
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:Tests.TrackNumberTests@2db7a79b]" name="Teardown" is-config="true" duration-ms="1070" started-at="2018-05-08T08:09:51Z" finished-at="2018-05-08T08:09:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- Tests.TrackNumberTests -->
+      <class name="Tests.LoginTests">
+        <test-method status="PASS" signature="Setup(java.lang.String)[pri:0, instance:Tests.LoginTests@4671e53b]" name="Setup" is-config="true" duration-ms="4236" started-at="2018-05-08T08:08:57Z" finished-at="2018-05-08T08:09:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="InvalidLoginDetails(java.lang.String, java.lang.String)[pri:0, instance:Tests.LoginTests@4671e53b]" name="InvalidLoginDetails" duration-ms="13247" started-at="2018-05-08T08:09:02Z" data-provider="LoginData" finished-at="2018-05-08T08:09:15Z">
           <params>
             <param index="0">
               <value>
@@ -34,11 +59,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidLoginDetails -->
-        <test-method status="PASS" signature="Teardown()[pri:0, instance:Tests.LoginTests@66d1af89]" name="Teardown" is-config="true" duration-ms="894" started-at="2018-05-02T07:35:29Z" finished-at="2018-05-02T07:35:30Z">
+        <test-method status="PASS" signature="InvalidLoginDetails(java.lang.String, java.lang.String)[pri:0, instance:Tests.LoginTests@4671e53b]" name="InvalidLoginDetails" duration-ms="7374" started-at="2018-05-08T08:09:15Z" data-provider="LoginData" finished-at="2018-05-08T08:09:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hello1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[good]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidLoginDetails -->
+        <test-method status="PASS" signature="InvalidLoginDetails(java.lang.String, java.lang.String)[pri:0, instance:Tests.LoginTests@4671e53b]" name="InvalidLoginDetails" duration-ms="7305" started-at="2018-05-08T08:09:22Z" data-provider="LoginData" finished-at="2018-05-08T08:09:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hippp@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bhh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidLoginDetails -->
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:Tests.LoginTests@4671e53b]" name="Teardown" is-config="true" duration-ms="946" started-at="2018-05-08T08:09:30Z" finished-at="2018-05-08T08:09:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
       </class> <!-- Tests.LoginTests -->
-    </test> <!-- ChromeTest -->
+    </test> <!-- ChromeTests -->
   </suite> <!-- TestSuite -->
 </testng-results>
